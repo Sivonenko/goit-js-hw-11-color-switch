@@ -1,0 +1,84 @@
+.input-wrapper {
+  width: 100%;
+  height: 67px;
+  padding: 20px 0 10px;
+  font-family: 'Roboto', sans-serif;
+  box-shadow: 0 0 12px rgba(0, 0, 0, 0.2);
+  background-color: #f3f6f6;
+}
+
+.search-form {
+  width: 256px;
+  display: block;
+  margin-bottom: 10px;
+
+  &::after {
+    content: '';
+    display: block;
+    width: 100%;
+    height: 2px;
+    background-color: #818181;
+    margin-top: 3px;
+  }
+
+  @media (min-width: 768px) {
+    font-size: 16px;
+    width: 284px;
+  }
+}
+
+.input {
+  display: block;
+  margin: auto auto;
+  outline: none;
+  border: none;
+  width: 252px;
+  background-repeat: no-repeat;
+  background-size: 17px;
+  font-size: 14px;
+  letter-spacing: 0.6px;
+  padding-left: 24px;
+  background-color: transparent;
+  background-image: url(../images/search-icon.svg);
+  &::placeholder {
+    color: black;
+  }
+  @media (min-width: 768px) {
+    font-size: 16px;
+    width: 284px;
+  }
+}
+
+.form-wrapper {
+  width: 256px;
+  margin: 0 auto;
+  
+  @media (min-width: 768px) {
+    font-size: 16px;
+    width: 284px;
+  }
+}
+.short-list-films{
+  max-height: 200px;
+  overflow-y: auto;
+  z-index: 10;
+  background-color: white;
+  }
+
+.short-list-films__item {
+  padding-left: 24px;
+  font-size: 16px;
+  &:hover {
+    background-color: #f1f0f8;
+  }
+}
+
+.wrong-input-notification {
+  width: 225px;
+  margin: 0 auto;
+  font-family: 'Roboto', sans-serif;
+  font-style: italic;
+  font-size: 12px;
+  color: rgb(255, 0, 0);
+  text-align: center;
+}
